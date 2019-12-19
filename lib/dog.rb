@@ -4,7 +4,7 @@ class Dog
   def initialize (id: nil, name:, breed:)
     @name = name
     @breed = breed
-    @id = id 
+    @id = id
   end
 
   def save
@@ -36,6 +36,6 @@ class Dog
   end
 
   def self.new_from_db (row)
-    dog = Dog.new(id: row[0], name: row[1], breed: row[2])    
-  end 
+    dog = Dog.new(id: row[0], name: row[1], breed: row[2])
+  end
 end
